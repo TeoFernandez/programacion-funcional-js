@@ -61,4 +61,9 @@ function funcionPatente() {
     console.log(resultado);
 }
 
+// Punto 5
+function funcionPatenteYMarca() {
+    const resultado = autos.map(auto => ({ patente: auto.patente, marca: auto.marca }));
+    console.log(resultado);
+}
 
