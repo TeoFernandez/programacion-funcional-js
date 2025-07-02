@@ -36,5 +36,18 @@ addEventListener("DOMContentLoaded", ()=>{
 //Punto 1
 function funcionKiloMay(){
     let vectorRet = autos.filter(auto =>auto.kilometraje>100000);
+    
     console.log(vectorRet);
+}
+
+function funcionMarcas(){
+    let marca = autos.map(auto => auto.marca)
+
+    console.log(marca)
+}
+
+function funcionAnioNuevo(){
+    let autoNuevo = autos.reduce((autoNuevo, auto)=>{return autoNuevo.anio>auto.anio ? auto.anio : auto})
+
+    console.log(autoNuevo)
 }
