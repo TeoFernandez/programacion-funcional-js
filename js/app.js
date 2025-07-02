@@ -34,3 +34,7 @@ addEventListener("DOMContentLoaded", ()=>{
 })
 
 //Punto 1
+function funcionKiloMay(){
+    let vectorRet = autos.filter(auto =>auto.kilometraje>100000);
+    console.log(vectorRet);
+}
