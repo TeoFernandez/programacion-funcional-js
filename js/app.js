@@ -54,3 +54,11 @@ function funcionAnioNuevo(){
 
     console.log(autoNuevo)
 }
+
+//Punto 4
+function funcionPatente() {
+    const resultado = autos.find(auto => auto.patente === "ABC129");
+    console.log(resultado);
+}
+
+
