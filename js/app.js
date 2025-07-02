@@ -67,3 +67,21 @@ function funcionPatenteYMarca() {
     console.log(resultado);
 }
 
+//Punto 6
+function funcionAntiguedad() {
+    const anioActual = new Date().getFullYear();
+    const resultado = autos.map(auto => anioActual - auto.anio);
+    console.log(resultado);
+}
+
+
+//Punto 7
+function funcionModelo() {
+    const anioActual = new Date().getFullYear();
+    const resultado = autos.map(auto => ({
+        patente: auto.patente,
+        marca: auto.marca,
+        antiguedad: anioActual - auto.anio
+    }));
+    console.log(resultado);
+}
