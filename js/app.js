@@ -40,12 +40,15 @@ function funcionKiloMay(){
     console.log(vectorRet);
 }
 
+//Punto 2
 function funcionMarcas(){
     let marca = autos.map(auto => auto.marca)
 
     console.log(marca)
 }
 
+
+//Punto 3
 function funcionAnioNuevo(){
     let autoNuevo = autos.reduce((autoNuevo, auto)=>{return autoNuevo.anio>auto.anio ? auto.anio : auto})
 
